@@ -35,6 +35,26 @@ using namespace std;
  *   is not.
  */
 // write your implementation if isPrime() function here
+bool isPrime(int value)
+{
+  // check all possible divisors of the value from 2 up to value-1 to
+  // see if we can find a valid divisor
+  for (int divisor = 2; divisor < value - 1; divisor++)
+  {
+    // if divisor divides the value, remainder is 0, and thus we found
+    // a divisor
+    if (value % divisor == 0)
+    {
+      // if there is a divisor other than 1 and value, then the answer is
+      // false, it is not prime
+      return false;
+    }
+  }
+
+  // but if we check all divisors and don't find one, then the answer
+  // is true, it is a prime
+  return true;
+}
 
 /** @brief Find primes in range
  *

@@ -29,7 +29,7 @@ using namespace std;
  * Uncomment the following test case block and write your code
  * to pass these tests for the isPrime() function.
  */
-/*
+
    TEST_CASE("<isPrime()> function tests", "[task1]")
    {
    // 1, 2 and 3 are all primes
@@ -66,7 +66,7 @@ using namespace std;
    CHECK_FALSE(isPrime(101007) );
    CHECK_FALSE(isPrime(101831) );
    }
- */
+ 
 
 /** findPrimes() test cases
  * Uncomment the following test case block and write your code
